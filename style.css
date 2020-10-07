@@ -1,2 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0px; 
+}
+
+header {
+    background-color: #dfd3c3;
+    width: auto;
+    height: 508px;
+}
+
+.header-icons {
+    display: flex;
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 200px;
+    cursor: pointer;  
+}
+
+.linkedin-header-icon, .github-header-icon, .stackoverflow-header-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 39px;
+    margin: 2px;
+    border: solid 3px #ffffff;
+    border-radius: 50%;
+}
+
+.header-icon-img {
+    display: flex;
+    width: 15.4px;
+    height: 14.75px;
+}
+
+.portfolio-info {
+    display: flex;
+    padding-left: 46px;
+    padding-top: 176px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.portfolio {
+    float: left;
+    margin: 0px;
+}
+
+.portfolio-name {
+    float: right;
+    margin-left: 20px; 
+}
+
+.job-title h1 {
+    font-family:'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    padding-left: 41px;  
+}
+
+.profile-image-div {
+    padding-left: 176px;
+    padding-top: 40px;
+}
+.profile-image {
+    width: 162px;
+    height: 162px;
+    border: solid 3px #ffffff;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.projects img {
+    width: 303px;
+    height: 179px;
+}
