@@ -3,165 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Therése Larsson">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="icon" type="img/png" href="./images/icon.png">
-    <title>PORTFOLIO: Therése Larsson</title>
+    <title>Portfolio: Therése Larsson</title>
 </head>
 <body>
 
 <header>
-   <div class="icon-1">
-     <button class="linkedin-header-icon"></button>
+   <div class="linkedin-header-icon">
+       <a href="https://www.linkedin.com/in/therése-larsson-770507115/" target="_blank" aria-label="Link to LinkedIn profile, will open in a new tab">
+            <img src="./Images/linkedin_icon.png" alt="Image of LinkedIn icon">
+       </a>    
    </div>
 
-   <div class="icon-2">
-       <button class="github-header-icon"></button>
+   <div class="github-header-icon">
+       <a href="https://github.com/Thessan" target="_blank" aria-label="Link to Github profile, will open in a new tab">
+            <img src="./Images/github_icon.png" alt="Image of Github icon">
+       </a>
    </div>
 
-   <div class="icon-3">
-    <button class="stackoverflow-header-icon"></button>
-</div>
-
-   <div class="header-info-1">
-       <p class="title-1">PORTFOLIO:</p>
-            <p class="title-2">THERÉSE LARSSON</p>
+   <div class="stackoverflow-header-icon">
+       <a href="https://stackoverflow.com/users/14059499/therése-larsson?tab=profile" target="_blank" aria-label="Link to StackOverflow profile, will open in a new tab">
+            <img src="./Images/stackoverflow-icon.png" alt="Image of StackOverflow icon">
+       </a>
    </div>
 
-   <div class="header-info-2">
+   <div class="portfolio-info" tabindex="0" aria-label="Name of portfolio">
+       <p class="portfolio">PORTFOLIO:</p>
+            <p class="portfolio-name">THERÉSE LARSSON</p>
+   </div>
+
+   <div class="job-title" tabindex="0" aria-label="Description of job title">
        <h1>Experienced admin/coordinator with coding skills</h1>
    </div>
 
-   <img class="profile-image" src="./Images/profile.jpg" alt="Profile picture of Therése Larsson">
+   <img class="profile-image" tabindex="0" src="./Images/profile.jpg" alt="Profile picture of Therése" aria-label="Profile picture of Therése">
 </header>
 
 
 <main class="content">
-    <div class="presentation">
-        <p>Hello I'm Therése</p>
+    <div class="summary" tabindex="0" aria-label="Short summary of Therése">
+        <p><span class="summary-line"></span><span class="summary-dot"></span>Hello I'm Therése...</p>
     </div>
 
-    <div class="technologies">
+    <div class="technologies" tabindex="0" aria-label="Technology knowledge">
         <h2>TECH</h2>
-            <p>HTML, CSS; JS etc</p>
+            <p>HTML5, CSS3, JS...</p>
     </div>
 
 
     <section class="projects">
-        <div class="featured-projects">
+        <div class="featured-projects" tabindex="0" aria-label="Projects made by Therése">
             <h2>FEATURED PROJECTS</h2>
 
-            <div class="weather-app">
-                <h3>WEATHER APP</h3>
-                    <p class="description">Built a weather app...</p>
-                        <div class="tags">HTML5</div>
-                        <div class="tags">CSS</div>
-                        <div class="tags">JavaScript</div>
+            <div class="weather-app"> 
+                <a href="https://github.com/Thessan/project-weather-app" tabindex="0" target="_blank" aria-label="Link to Weather app on GitHub, will open in a new tab">
+                    <img src="./Images/weather_app.png" alt="Image of weather app">
+                        <h3>WEATHER APP</h3>
+                            <p>Built a weather app <span class="arrows">>></span></p>
+                                <div class="tags">HTML5</div>
+                                <div class="tags">CSS</div>
+                                <div class="tags">JavaScript</div>
+                </a>
             </div>
 
             <div class="cluedo">
-                <h3>CLUEDO MYSTERY PICKER</h3>
-                    <p class="description">Built a Cluedo mystery picker...</p>
-                        <div class="tags">HTML5</div>
-                        <div class="tags">CSS</div>
-                        <div class="tags">JavaScript</div>
+                <a href="https://github.com/Thessan/project-cluedo" tabindex="0" target="_blank" aria-label="Link to Cluedo project on GitHub, will open in a new tab">
+                    <img src="./Images/cluedo.png" alt="Image of Cluedo project"    
+                        <h3>CLUEDO MYSTERY PICKER</h3>
+                            <p>Built a Cluedo mystery picker <span class="arrows">>></span></p>
+                                <div class="tags">HTML5</div>
+                                <div class="tags">CSS</div>
+                                <div class="tags">JavaScript</div>
+                </a>
             </div>
         </div>
 
         <div class="other-projects">
-            <h2 class="div-header">OTHER PROJECTS</h2>
+            <h2>OTHER PROJECTS</h2>
 
             <div class="food-site">
-                <h3>FRENCH RESTAURANTS IN MUMBAI</h3>
-                    <p class="description">Built a responsive site displaying french restaurants in Mumbai</p>
-                    <div class="tags">HTML5</div>
-                    <div class="tags">CSS</div>
-                    <div class="tags">JavaScript</div>
-                    <div class="tags">Mob-programming</div>
+                <!--<a href="" tabindex="0" target="_blank" aria-label="Link to restaurant project on GitHub, will open in a new tab">-->
+                    <img src="./Images/restaurants.png" alt="Image of website displaying French resturants in Mumbai">
+                        <h3>FRENCH RESTAURANTS IN MUMBAI</h3>
+                            <p>Mob-programmed a responsive site, displaying french restaurants in Mumbai <span class="arrows">>></span></p>
+                                <div class="tags">HTML5</div>
+                                <div class="tags">CSS</div>
+                                <div class="tags">JavaScript</div>
+                                <div class="tags">Mob-programming</div>
+                <!--</a>-->
             </div>
 
             <div class="news-site">
-                <h3>NEWS SITE</h3>
-                    <p class="description">Built a repsonsive site about weddings... </p>
-                        <div class="tags">HTML5</div>
-                        <div class="tags">CSS</div>
+                <a href="https://github.com/Thessan/project-news-site" tabindex="0" target="_blank" aria-label="Link to news site project on GitHub, will open in a new tab">
+                    <img src="./Images/news.png" alt="Image displaying the news site Wedding Weekly">
+                        <h3>NEWS SITE</h3>
+                            <p>Built a repsonsive site about weddings <span class="arrows">>></span></p>
+                                <div class="tags">HTML5</div>
+                                <div class="tags">CSS</div>
+                </a>
             </div>
 
             <div class="business-site">
-                <h3>BUSINESS SITE</h3>
-                    <p class="description">Built a business site for surfobard rental...</p>
-                        <div class="tags">HTML5</div>
-                        <div class="tags">CSS</div>
-                        <div class="tags">JavaScript</div>
+                <a href="https://github.com/Thessan/project-business-site" tabindex="0" target="_blank" aria-label="Link to business site project on GitHub, will open in a new tab">
+                    <img src="./Images/business.png" alt="Image displaying the business site for Surfboard Rental in Hiriketiya">
+                        <h3>BUSINESS SITE</h3>
+                            <p>Built a business site for surfobard rental <span class="arrows">>></span></p>
+                                <div class="tags">HTML5</div>
+                                <div class="tags">CSS</div>
+                                <div class="tags">JavaScript</div>
+                </a>                
             </div>
         </div>
     </section>
 
-    <section class="thoughts">
+    
+    <!-- ADD THIS SECTION LATER, and make it into a link
+        <section class="thoughts">
         <div class="my-thougts">
             <h2>MY THOUGHTS ABOUT CODE</h2>
-            <!--ADD MORE INFORMATION-->
-        </div>
+        </div> -->
 
-        <div class="more-thoughts">
-            <h2 class="div-header">MORE THOUGHTS</h2>
-            <!---ADD MORE INFORMATION-->
+        <!-- ADD THIS SECTION LATER, and make it into a link
+            <div class="more-thoughts">
+            <h2 class="thoughts-header">MORE THOUGHTS</h2>
+            
         </div>
-    </section>
-
+    </section> -->
 
     <section class="skills">
-        <div class="code">
+        <div class="code" tabindex="0" aria-label="Code skills">
             <h3>CODE</h3>
-                <p class="description">HTML5</p>
-                <p class="description">CSS3</p>
-                <p class="description">JavaScript ES6</p>
-                <p class="description">GitHub</p>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript ES6</li>
+                </ul>
         </div>
 
-        <div class="toolbox">
+        <div class="toolbox" tabindex="0" aria-label="Tool skills">
             <h3>TOOLBOX</h3>
-                <p class="description">Microsoft Excel</p>
+                <ul>
+                    <li>Slack</li>
+                    <li>GitHub</li>
+                    <li>VS Code</li>
+                    <li>Microsoft Word</li>
+                    <li>Microsoft Excel</li>
+                </ul>
         </div>
 
-        <div class="upcoming">
+        <div class="upcoming" tabindex="0" aria-label="Upcoming skills">
             <h3>UPCOMING</h3>
-                <p class="description">Redux</p>
+                <ul>
+                    <li>Redux and more...</li>
+                </ul>
         </div>
 
-        <div class="more">
+        <div class="more" tabindex="0" aria-label="More skills">
             <h3>MORE</h3>
-                <p class="description">Blah blah blah</p>
+                <ul>
+                    <li>Mob-programming</li>
+                    <li>Pair-programming</li>
+                    <li>Web Accessability</li>
+                    <li>Creation of workflows & manuals</li>
+                </ul>
         </div>
     </section>
 
     <section class="for-more">
         <h2>FOR MORE</h2>
-            <div class="icon-4">
-                <button class="linkedin-bottom-icon"></button>
-                    <p>Linkedin</p>
+            <div class="linkedin-bottom-icon">
+                <a href="https://www.linkedin.com/in/therése-larsson-770507115/" target="_blank" aria-label="Link to LinkedIn profile, will open in a new tab">
+                    <img src="./Images/linkedin_icon.png" alt="Image of LinkedIn icon">
+                </a>
+                    <p>LINKEDIN</p>
             </div>
 
-            <div class="icon-5">
-                <button class="github-bottom-icon"></button>
-                    <p>GitHub</p>
+            <div class="github-bottom-icon">
+                <a href="https://github.com/Thessan" target="_blank" aria-label="Link to Github profile, will open in a new tab">
+                     <img src="./Images/github_icon.png" alt="Image of Github icon">
+                </a>
+                    <p>GITHUB</p>
             </div>
             
-            <div class="icon-6">
-                <button class="stackoverflow-bottom-icon"></button>
-                    <p>StackOverflow</p>
+            <div class="stackoverflow-bottom-icon">
+                <a href="https://stackoverflow.com/users/14059499/therése-larsson?tab=profile" target="_blank" aria-label="Link to StackOverflow profile, will open in a new tab">
+                     <img src="./Images/stackoverflow-icon.png" alt="Image of StackOverflow icon">
+                </a>
+                    <p>STACKOVERFLOW</p>
             </div>
     </section>
 </main>
 
 <footer>
-    <h2 class="contact-details">CONTACT</h2>
-    <p class="contact-name">Therése Larsson</p>
-    <a class="phone" href="tel:+46760080201">
-        <p class="contact-detail">+46 76 008 02 01</p>
-    </a>
-    <a class="email" href="mailto: larsson.therese@live.se">
-        <p class="contact-detail">larsson.therese@live.se</p>
-    </a>
+    <h2>CONTACT</h2>
+        <p>Therése Larsson</p>
+            <a href="tel:+46760080201" tabindex="0" aria-label="Phone number to Therése">
+            <p>+46 76 008 02 01</p>
+            </a>
+            <a href="mailto: larsson.therese@live.se" tabindex="0" aria-label="Email address to Therése">
+            <p>larsson.therese@live.se</p>
+            </a>
 </footer>
 
 </body>
