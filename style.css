@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -6,16 +7,17 @@ body {
     margin: 0px; 
 }
 
+/* Header section */
 header {
     background-color: #dfd3c3;
     width: auto;
-    height: 508px;
+    height: 490px;
 }
 
 .header-icons {
     display: flex;
     position: absolute;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-left: 200px;
     cursor: pointer;  
 }
@@ -40,8 +42,9 @@ header {
 .portfolio-info {
     display: flex;
     padding-left: 46px;
-    padding-top: 176px;
+    padding-top: 170px;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     font-size: 13px;
     color: #ffffff;
     text-align: left;
@@ -59,28 +62,40 @@ header {
 
 .job-title h1 {
     font-family:'Montserrat', sans-serif;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 40px;
     color: #ffffff;
+    line-height: 49px;
+    width: 280px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     padding-left: 41px;  
 }
 
 .profile-image-div {
     padding-left: 176px;
-    padding-top: 40px;
 }
+
 .profile-image {
-    width: 162px;
-    height: 162px;
+    width: 160px;
+    height: 165px;
     border: solid 3px #ffffff;
     border-radius: 50%;
 }
 
 
+.top, .featured-projects, .other-projects, .skills, .for-more, .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
 
-.projects img {
+
+.featured-projects img, .other-projects img {
     width: 303px;
     height: 179px;
 }
