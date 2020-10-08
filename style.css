@@ -77,23 +77,83 @@ header {
 }
 
 .profile-image {
+    position: absolute;
     width: 160px;
     height: 165px;
     border: solid 3px #ffffff;
     border-radius: 50%;
 }
 
-
-.top, .featured-projects, .other-projects, .skills, .for-more, .contact{
+/*Common styling for all other sections*/
+.top-section-1, .top-section-2, .summary, .technologies, .featured-projects, .other-projects, .skills, .for-more, .contact{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+/*Summary section*/
+.top-section-1 {
+    background-color: #c7b198;
+}
+
+.summary {
+    background-color: #c7b198;
+    font-family:'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    word-wrap: break-word;
+    width: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.summary-line {
+    display: inline-flex;
+    width: 45px;
+    height: 5px;
+    margin-left: 0px;
+    margin-bottom: 4px;
+    background-color: #ffffff;
+}
+
+.summary-dot {
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+/* Technologies section*/
+
+.top-section-2 {
+ 
+}
+
+.top-section-2 h2{
+    font-family:'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: #596e79;
+    margin-top: 40px;
+    padding: 5px 13px;
+}
+
+.top-section-2 p {
+    font-family:'Montserrat', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 40px;
+}
 
 
-
+/* Projects section*/
+.featured-projects {
+    background-color: #c7b198;
+    color: #ffffff;
+}
 
 .featured-projects img, .other-projects img {
     width: 303px;
