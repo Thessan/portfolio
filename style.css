@@ -102,8 +102,8 @@ header {
     border-radius: 50%;
 }
 
-/* Common styling for all other sections */
-.top-section-1, .top-section-2, .summary, .technologies, .featured-projects, .other-projects, .skills, .for-more, .contact{
+/* Common styling for all other sections (excl. Featured- and Other projects and for-more) */
+.top-section-1, .top-section-2, .summary, .technologies, .thoughts, .skills, .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,7 +134,7 @@ header {
     height: 4px;
     margin-left: 1px;
     margin-bottom: 4.5px;
-    background-color: #ffffff;
+    background-color: #596e79;
 }
 
 .summary-dot {
@@ -144,7 +144,7 @@ header {
     margin-left: -6px;
     margin-right: 14px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #596e79;
 }
 
 /* Technologies section */
@@ -166,6 +166,27 @@ header {
     margin-bottom: 40px;
 }
 
+/* Common styling for Featured projects & Other projects */
+.featured-projects, .other-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tags {
+    display: inline-flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    background-color: #596e79;
+    padding: 3px 6px;
+    margin-top: 31px;
+}
+
+.featured-projects, .other-projects, a:hover .tags {
+    color: #596e79;
+    background-color: #ffffff;
+}
 
 /* Featured projects section */
 .featured-projects {
@@ -200,6 +221,7 @@ header {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     color: #596e79;
+    line-height: 25px;
     float: left;
     margin-bottom: -10px;
 }
@@ -207,6 +229,7 @@ header {
 .featured-projects p {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
+    line-height: 25px;
     float: right;
     margin-bottom: -15px;
 }
@@ -214,15 +237,6 @@ header {
 .featured-projects .arrows {
     color: #596e79;
     text-decoration: underline;
-}
-
-.featured-projects .tags {
-    display: inline-flex;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    background-color: #596e79;
-    padding: 3px 6px;
-    margin-top: 31px;
 }
 
 .weather-app, .cluedo {
@@ -233,7 +247,6 @@ header {
 .featured-projects img {
     width: 300px;
     height: 180px;
-    
 }
 
 /* Other projects section */
@@ -256,6 +269,7 @@ header {
 
 .other-projects h2 {
     font-family:'Montserrat', sans-serif;
+    font-size: 21px;
     color: #ffffff;
     text-align: center;
 }
@@ -264,6 +278,7 @@ header {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     color: #596e79;
+    line-height: 25px;
     float: left;
     margin-bottom: -10px;
 }
@@ -271,6 +286,7 @@ header {
 .other-projects p {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
+    line-height: 25px;
     float: right;
     margin-bottom: -15px;
 }
@@ -278,15 +294,6 @@ header {
 .other-projects .arrows {
     color: #596e79;
     text-decoration: underline;
-}
-
-.other-projects .tags {
-    display: inline-flex;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    background-color: #596e79;
-    padding: 3px 6px;
-    margin-top: 31px;
 }
 
 .other-projects img {
@@ -297,4 +304,156 @@ header {
 .news-site, .business-site {
     width: 80%;
     margin-bottom: 40px;
+}
+
+/* Thoughts section */
+.thoughts h2 {
+    font-family:'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #596e79;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 5px 13px;
+}
+
+.thoughts h3 {
+    font-family:'Montserrat', sans-serif;
+    font-size: 21px;
+    color: #596e79;
+}
+
+/* Skills sections */
+.skills {
+    background-color: #c7b198;
+    padding-bottom: 40px;
+}
+
+.skills h2 {
+    font-family:'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #596e79;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 5px 13px;
+}
+
+.skills h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #596e79;
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 6px;
+}
+
+ul {
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 25px;
+    list-style: none;
+    width: 80px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* For more section */
+.for-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.for-more p{
+    margin-top: 55px;
+}
+
+.for-more h2 {
+    font-family:'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #596e79;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 5px 13px;
+}
+
+.bottom-icons {
+    display: flex;
+    flex-direction: row;
+}
+.linkedin-bottom-icon, .github-bottom-icon, .stackoverflow-bottom-icon {
+    display: flex;
+    align-items: center;
+    width: 59px;
+    height: 58px;
+    margin: 20px;
+    background-color: #596e79;
+    border: solid 3px #596e79;
+    border-radius: 50%;
+}
+
+.bottom-icon-img {
+    display: flex;
+    width: 29x;
+    height: 28px;
+}
+
+.for-more a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.for-more a:link, a:visited {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color:  #596e79;
+    text-decoration: none;
+}
+
+.for-more a:hover {
+    color: #ffffff;
+    background-color: #596e79;
+    width: 55px;
+    height: 15px;
+    transform: scale(1);
+}
+
+/* Contact section */
+.contact {
+    background-color: #596e79;
+}
+
+.contact h3 {
+    font-family:'Montserrat', sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.contact h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.contact a:link, a:visited {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.contact a:hover {
+    color: #596e79;
+    background-color: #ffffff;
 }
