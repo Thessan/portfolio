@@ -9,8 +9,11 @@ body {
 
 /* Header section */
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #dfd3c3;
-    width: auto;
+    width: 100%;
     height: 490px;
 }
 
@@ -41,7 +44,7 @@ header {
 
 .portfolio-info {
     display: flex;
-    padding-left: 46px;
+    width: 80%;
     padding-top: 170px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -61,25 +64,40 @@ header {
 }
 
 .job-title h1 {
+    display: flex;
     font-family:'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 40px;
     color: #ffffff;
     line-height: 49px;
-    width: 280px;
+    width: 80%;
+    float: left;
+    margin-left: 35px;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-left: 41px;  
+}
+
+.job-title h3 {
+    display: flex;
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 49px;
+    width: 80%;
+    float: left;
+    margin-left: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .profile-image-div {
-    padding-left: 176px;
+    padding-right: 20px;
 }
 
 .profile-image {
     position: absolute;
-    width: 160px;
-    height: 165px;
+    width: 162px;
+    height: 162px;
     border: solid 3px #ffffff;
     border-radius: 50%;
 }
@@ -95,6 +113,7 @@ header {
 /* Summary section */
 .top-section-1 {
     background-color: #c7b198;
+    width: 100%;
 }
 
 .summary {
@@ -102,37 +121,36 @@ header {
     font-family:'Montserrat', sans-serif;
     font-size: 17px;
     color: #ffffff;
+    line-height: 29px;
     word-wrap: break-word;
-    width: 310px;
-    padding-left: 30px;
+    width: 80%;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 .summary-line {
     display: inline-flex;
-    width: 45px;
+    width: 50px;
     height: 4px;
-    margin-left: 0px;
-    margin-bottom: 4px;
+    margin-left: 1px;
+    margin-bottom: 4.5px;
     background-color: #ffffff;
 }
 
 .summary-dot {
     display: inline-flex;
-    width: 13px;
-    height: 13px;
-    margin-left: -2px;
-    margin-right: 12px;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    margin-right: 14px;
     border-radius: 50%;
     background-color: #ffffff;
 }
 
 /* Technologies section */
-
-
 .top-section-2 h2{
     font-family:'Montserrat', sans-serif;
+    font-size: 22px;
     color: #ffffff;
     background-color: #596e79;
     margin-top: 40px;
@@ -142,8 +160,9 @@ header {
 .top-section-2 p {
     font-family:'Montserrat', sans-serif;
     font-size: 17px;
+    line-height: 29px;
     text-align: center;
-    width: 300px;
+    width: 80%;
     margin-bottom: 40px;
 }
 
@@ -162,8 +181,13 @@ header {
     color: #596e79;
 }
 
+.featured-projects a:hover span {
+    color: #596e79;
+}
+
 .featured-projects h2 {
     font-family:'Montserrat', sans-serif;
+    font-size: 22px;
     color: #ffffff;
     background-color: #596e79;
     text-align: center;
@@ -175,32 +199,102 @@ header {
 .featured-projects h3{
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
-
+    color: #596e79;
+    float: left;
+    margin-bottom: -10px;
 }
 
 .featured-projects p {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
+    float: right;
+    margin-bottom: -15px;
 }
 
-.featured-projects div {
-    display: inline-flex;
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-}
-
-.arrows {
-    color: #ffffff;
+.featured-projects .arrows {
+    color: #596e79;
     text-decoration: underline;
 }
-.weather-app {
-    width: 300px;
+
+.featured-projects .tags {
+    display: inline-flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    background-color: #596e79;
+    padding: 3px 6px;
+    margin-top: 31px;
 }
 
-.featured-projects img, .other-projects img {
+.weather-app, .cluedo {
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+.featured-projects img {
     width: 300px;
     height: 180px;
-    filter: grayscale(50%);
+    
 }
 
+/* Other projects section */
+.other-projects {
+    background-color: #c7b198;
+}
 
+.other-projects a:link, a:visited {
+    color:  #ffffff;
+    text-decoration: none;
+}
+
+.other-projects a:hover {
+    color: #596e79;
+}
+
+.other-projects a:hover span {
+    color: #596e79;
+}
+
+.other-projects h2 {
+    font-family:'Montserrat', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.other-projects h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #596e79;
+    float: left;
+    margin-bottom: -10px;
+}
+
+.other-projects p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    float: right;
+    margin-bottom: -15px;
+}
+
+.other-projects .arrows {
+    color: #596e79;
+    text-decoration: underline;
+}
+
+.other-projects .tags {
+    display: inline-flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    background-color: #596e79;
+    padding: 3px 6px;
+    margin-top: 31px;
+}
+
+.other-projects img {
+    width: 300px;
+    height: 180px;
+}
+
+.news-site, .business-site {
+    width: 80%;
+    margin-bottom: 40px;
+}
