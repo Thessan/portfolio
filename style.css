@@ -63,7 +63,6 @@ header {
     position: absolute;
     padding-top: 80px;
     padding-left: 200px;
-    cursor: pointer;  
 }
 
 .linkedin-header-icon, .github-header-icon, .stackoverflow-header-icon {
@@ -132,7 +131,7 @@ header {
 }
 
 /* Common styling for all other sections */
-.summary-section, .tech-section, .summary, .technologies, .featured-projects, .other-projects, .project-container, .thoughts, .skills, .contact {
+.summary-section, .tech-section, .summary, .technologies, .featured-projects, .other-projects, .project-container, .thoughts, .skills, .for-more {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,7 +181,7 @@ header {
     padding-bottom: 20px;
 }
 
-.project-container { /* the individual project div's */
+.project-container { /* each individual project */
     width: 300px;
     margin: 20px 0px 20px 0px;
 }
@@ -231,6 +230,7 @@ span:hover { /* hover effect on arrows */
 .featured-projects img {
     width: 300px;
     height: 180px;
+    margin-bottom: 5px;
 }
 
 .featured-projects a:link, a:visited { 
@@ -247,23 +247,20 @@ span:hover { /* hover effect on arrows */
     margin-bottom: -15px;
 }
 
-.other-projects h2 {
+.other-projects h2 { 
     color: #ff9100;
     background-color: transparent;
     margin: 10px 0px 5px 0px;
 }
 
-.other-projects h3{
-    float: left;
-    margin: 0px 0px -10px 0px;
+.other-projects h3{ 
+    margin: 3px 0px -18px 0px;
 }
+
 .other-projects a:link, a:visited {
     color:  #ffffff;
     text-decoration: none;
 }
-
-
-
 
 /* Thoughts section */
 .thoughts h3 {
@@ -278,14 +275,10 @@ span:hover { /* hover effect on arrows */
     padding-bottom: 40px;
 }
 
-
 .skills h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    color: #596e79;
+    color: #ff9100;
     text-align: center;
     font-weight: bold;
-    line-height: 25px;
     margin-bottom: 6px;
 }
 
@@ -293,7 +286,7 @@ ul {
     display: inline;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     line-height: 25px;
     list-style: none;
@@ -305,81 +298,66 @@ ul {
 
 /* For more section */
 .for-more {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 40px;
-}
-
-.for-more p{
-    margin-top: 55px;
 }
 
 .bottom-icons {
     display: flex;
-    flex-direction: row;
 }
+
 .linkedin-bottom-icon, .github-bottom-icon, .stackoverflow-bottom-icon {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 59px;
     height: 58px;
-    margin: 20px;
-    background-color: #596e79;
-    border: solid 3px #596e79;
+    margin: 10px;
+    background-color: #ff9100;
     border-radius: 50%;
 }
 
 .bottom-icon-img {
     display: flex;
-    width: 29x;
-    height: 28px;
-}
-
-.for-more a {
-    display: flex;
     align-items: center;
     justify-content: center;
-}
-.for-more a:link, a:visited {
-    font-family: 'Roboto', sans-serif;
-    font-size: 11px;
-    color:  #596e79;
-    text-decoration: none;
+    width: 29x;
+    height: 28px; 
 }
 
-.for-more a:hover {
-    color: #ffffff;
-    background-color: #596e79;
-    width: 55px;
-    height: 15px;
+.linkedin-bottom-icon:hover, .github-bottom-icon:hover, .stackoverflow-bottom-icon:hover {
+    background-color:#156900;
 }
 
-/* Contact section */
-.contact {
-    background-color: #596e79;
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #967e7e;
+
 }
 
-.contact h3 {
+.footer h3 {
     font-family:'Montserrat', sans-serif;
     font-size: 21px;
     color: #ffffff;
 }
 
-.contact h4 {
+.footer h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     color: #ffffff;
     font-weight: bold;
 }
 
-.contact a:link, a:visited {
+.footer a:link, a:visited {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     color: #ffffff;
 }
 
-.contact a:hover {
+.footer a:hover {
     color: #596e79;
     background-color: #ffffff;
 }
