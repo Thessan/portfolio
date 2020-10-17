@@ -17,12 +17,7 @@ p {
     color: #000000;
     font-size: 17px;
     line-height: 29px;
-    width: 100%;
     margin-bottom: 40px;
-}
-
-.technologies p {
-    text-align: center;
 }
 
 h1 { /* job title */
@@ -62,7 +57,7 @@ header {
     display: flex;
     position: absolute;
     padding-top: 80px;
-    padding-left: 200px;
+    padding-left: 50%;
 }
 
 .linkedin-header-icon, .github-header-icon, .stackoverflow-header-icon {
@@ -97,8 +92,8 @@ header {
     float: left;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    width: 100px;
-    margin: 0px;
+    width: 80px;
+    margin: 0px 0px 0px 5px;
 }
 
 .portfolio-name { /* p-class */
@@ -123,7 +118,7 @@ header {
     padding: 0px;
 }
 
-.profile-image { /* IF I ADD A BORDER, HOW DO I GET RID OF THE SPACE BETWEEEN THE IMG AND BORDER? */
+.profile-image { 
     position: absolute;
     width: 162px;
     height: 162px;
@@ -146,10 +141,6 @@ header {
 
 .summary {
     background-color: #F4F4F4;
-    font-family:'Montserrat', sans-serif;
-    font-size: 17px;
-    color: #000000;
-    line-height: 29px;
     word-wrap: break-word;
     width: 80%;
     padding-top: 60px;
@@ -175,11 +166,21 @@ header {
     background-color: #ff9100;
 }
 
+/* Technologies section */
+.technologies {
+    width: 80%;
+}
+
+.technologies p {
+    text-align: center;
+}
+
 /* Common styling for featured-projects & other-projects */
 .featured-projects, .other-projects {
     background-color: #F4F4F4;
     padding-bottom: 20px;
 }
+
 
 .project-container { /* each individual project */
     width: 300px;
@@ -359,4 +360,58 @@ footer a:link, a:visited {
 
 footer a:hover {
     font-weight: bold;
+}
+
+
+
+/* TABLET VERSION */
+@media screen and (min-width: 668px) {
+
+  /* Header section */
+header {
+    height: 520px;
+}
+
+.header-icons {
+    padding-right: 50px;
+}
+
+h1 { /* job title */
+    font-size: 50px;
+    margin-left: 90px;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 5px 13px;
+}
+
+/* Header section */
+.portfolio { /* p-class */
+    margin-left: 90px;
+}
+
+.job-title h2 {
+    margin-left: 90px;
+}
+
+.profile-image { 
+    width: 172px;
+    height: 172px;
+    margin-left: 50px;
+}
+
+/* Summary section */
+.summary {
+    width: 60%;
+}
+
+.technologies {
+    width: 60%;
+}
+
+
+
+
 }
