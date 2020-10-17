@@ -126,7 +126,7 @@ header {
 }
 
 /* Common styling for all other sections */
-.summary-section, .tech-section, .summary, .technologies, .featured-projects, .other-projects, .project-container, .thoughts, .skills, .for-more {
+.summary-section, .tech-section, .summary, .technologies, .projects, .featured-projects, .other-projects, .project-container, .thoughts, .all-skills, .skills, .for-more {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,10 +175,15 @@ header {
     text-align: center;
 }
 
+.projects {
+    background-color: #F4F4F4;
+}
+
 /* Common styling for featured-projects & other-projects */
 .featured-projects, .other-projects {
     background-color: #F4F4F4;
     padding-bottom: 20px;
+    width: 80%;
 }
 
 
@@ -271,8 +276,13 @@ span:hover { /* hover effect on arrows */
 }
 
 /* Skills sections */
+.all-skills {
+    background-color: #F4F4F4;
+}
+
 .skills {
     background-color: #F4F4F4;
+    width: 80%;
     padding-bottom: 40px;
 }
 
@@ -281,6 +291,13 @@ span:hover { /* hover effect on arrows */
     text-align: center;
     font-weight: bold;
     margin-bottom: 6px;
+}
+
+.skills-container {
+    width: 80%;
+    height: auto;
+    padding: 0px;
+
 }
 
 ul {
@@ -411,7 +428,21 @@ h2 {
     width: 60%;
 }
 
+.other-projects .project-container {
+    width: 550px;
+}
+    
+.skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    padding-bottom: 0px;
+}
 
+.skills-container {
+    width: 200px;
+    height: 200px;
+}
 
 
 }
