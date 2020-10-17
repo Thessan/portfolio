@@ -224,7 +224,7 @@ span:hover { /* hover effect on arrows */
 }
 
 .featured-projects h3 {
-    margin: 3px 0px -18px 0px;
+    margin: 3px 0px -15px 0px;
 }
 
 .featured-projects img {
@@ -254,7 +254,7 @@ span:hover { /* hover effect on arrows */
 }
 
 .other-projects h3{ 
-    margin: 3px 0px -18px 0px;
+    margin: 3px 0px -15px 0px;
 }
 
 .other-projects a:link, a:visited {
@@ -329,35 +329,34 @@ ul {
 }
 
 /* Footer */
-.footer {
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #967e7e;
-
+    background-color: #979797;
+    padding: 35px 0px;
 }
 
-.footer h3 {
+footer h3 {
     font-family:'Montserrat', sans-serif;
     font-size: 21px;
     color: #ffffff;
+    margin-top: 0px;
 }
 
-.footer h4 {
+footer p {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     color: #ffffff;
+    text-align: center;
+    margin: 0px;
+}
+
+footer a:link, a:visited {
+    text-decoration: none;
+}
+
+footer a:hover {
     font-weight: bold;
-}
-
-.footer a:link, a:visited {
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    color: #ffffff;
-}
-
-.footer a:hover {
-    color: #596e79;
-    background-color: #ffffff;
 }
