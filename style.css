@@ -126,7 +126,7 @@ header {
 }
 
 /* Common styling for all other sections */
-.summary-section, .tech-section, .summary, .technologies, .projects, .featured-projects, .other-projects, .project-container, .thoughts, .all-skills, .skills, .for-more {
+.summary-section, .tech-section, .summary, .technologies, .projects, .top-projects, .featured-projects, .other-projects, .project-container, .thoughts, .all-skills, .skills, .for-more {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,6 +278,7 @@ span:hover { /* hover effect on arrows */
 /* Skills sections */
 .all-skills {
     background-color: #F4F4F4;
+    padding-bottom: 20px;
 }
 
 .skills {
@@ -381,12 +382,11 @@ footer a:hover {
 
 
 
-/* TABLET VERSION */
-@media screen and (min-width: 668px) {
-
+                                          /* TABLET VERSION */
+@media screen and (min-width: 768px) {
   /* Header section */
 header {
-    height: 520px;
+    height: 560px;
 }
 
 .header-icons {
@@ -394,28 +394,23 @@ header {
 }
 
 h1 { /* job title */
-    font-size: 50px;
+    font-size: 55px;
     margin-left: 90px;
 }
 
-h2 {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 5px 13px;
-}
-
-/* Header section */
 .portfolio { /* p-class */
-    margin-left: 90px;
+    margin-left: 95px;
 }
 
 .job-title h2 {
+    font-size: 20px;
     margin-left: 90px;
+    width: 250px;
 }
 
 .profile-image { 
-    width: 172px;
-    height: 172px;
+    width: 200px;
+    height: 200px;
     margin-left: 50px;
 }
 
@@ -442,6 +437,123 @@ h2 {
 .skills-container {
     width: 200px;
     height: 200px;
+}
+
+}
+
+                                            /* DESKTOP VERSION */
+@media screen and (min-width: 1366px) {
+    /* Header section */
+header {
+    height: 650px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1 { /* job title */
+    font-size: 70px;
+    margin-left: 220px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+  .portfolio { /* p-class */
+    font-size: 20px;
+    width: 125px;
+    margin-left: 220px;
+}
+
+.portfolio-name { /* p-class */
+    font-size: 20px;
+}
+
+.job-title h2 {
+    font-size: 25px;
+    margin-left: 220px;
+    width: 350px;
+}
+
+.profile-image { 
+    width: 250px;
+    height: 250px;
+    margin-left: 140px;
+}
+
+/* Summary section */
+.summary {
+    width: 55%;
+}
+
+.technologies {
+    width: 60%;
+}
+
+/* Featured projects */
+.top-projects { /*wraps all featured projects */
+    width: 100%;
+}
+
+.featured-projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.featured-projects .project-container {
+    width: 340px;
+    margin: 30px 10px;   
+}
+
+.featured-projects p {
+    font-size: 19px;
+}
+
+.featured-projects img {
+    width: 320px;
+    height: 220px;
+}
+
+/* Other projects */
+.other-projects p {
+    font-size: 19px;
+}
+
+.other-projects .project-container {  /* HOW TO GET THESE ALIGNED TO THE LEFT?! */
+    width: 550px;
+}
+
+/* Skills section */
+.skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%; 
+    padding-bottom: 0px;
+}
+
+.skills-container {
+    width: 200px;
+    height: 200px;
+}
+
+ul {
+    font-size: 19px;
+}
+
+/* Footer */
+
+footer h3 {
+    font-size: 25px;
+}
+
+footer p {
+    font-size: 19px;
 }
 
 
