@@ -122,6 +122,7 @@ header {
     width: 162px;
     height: 162px;
     border-radius: 50%;
+    border: #ff9100 solid 5px;
 }
 
 /* Common styling for all other sections */
@@ -174,10 +175,6 @@ header {
     text-align: center;
 }
 
-.projects {
-    background-color: #F4F4F4;
-}
-
 /* Common styling for featured-projects & other-projects */
 .featured-projects, .other-projects {
     background-color: #F4F4F4;
@@ -185,6 +182,9 @@ header {
     width: 80%;
 }
 
+.projects {
+    background-color: #F4F4F4;
+}
 
 .project-container { /* each individual project */
     width: 300px;
@@ -276,8 +276,34 @@ span:hover { /* hover effect on arrows */
 .thoughts h3 {
     font-family:'Montserrat', sans-serif;
     font-size: 21px;
-    color: #000000;
 }
+
+.thoughts-container { /* each individual thought */
+    width: 300px;
+    height: 320px;
+    margin: 20px 0px 20px 0px;
+}
+
+.thoughts p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    float: right;
+    margin-bottom: 15px;
+}
+
+.thoughts h3 {
+    margin: 3px 0px -15px 0px;
+    font-size: 17px;
+}
+
+.thoughts img {
+    width: 300px;
+    height: 180px;
+    margin-bottom: 5px;
+}
+
+
 
 /* Skills sections */
 .all-skills {
