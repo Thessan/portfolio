@@ -122,7 +122,7 @@ header {
     width: 162px;
     height: 162px;
     border-radius: 50%;
-    border: #ff9100 solid 5px;
+    /* border: #ff9100 solid 5px; */
 }
 
 /* Common styling for all other sections */
@@ -186,11 +186,6 @@ header {
     background-color: #F4F4F4;
 }
 
-.project-container { /* each individual project */
-    width: 300px;
-    margin: 20px 0px 20px 0px;
-}
-
 .arrows {
     color: #ff9100;
     text-decoration: underline;
@@ -201,17 +196,24 @@ span:hover { /* hover effect on arrows */
     background-color: #ff9100;
 }
 
+.title-and-description {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 85px;
+}
+
 .tag-container {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    width: 100%;
+    width: 300px;
 }
 
 .tag {
     display: inline-flex;
     background-color: #ff9100;
     padding: 3px 6px;
-    margin-top: 25px;
+    margin: 2px;
 }
 
 .tag:hover {
@@ -220,6 +222,14 @@ span:hover { /* hover effect on arrows */
 }
 
 /* Featured projects */
+.project-container { /* each individual project */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 20px 0px 20px 0px;
+}
+
 .featured-projects p {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
@@ -233,9 +243,8 @@ span:hover { /* hover effect on arrows */
 }
 
 .featured-projects img {
-    width: 300px;
-    height: 180px;
-    margin-bottom: 5px;
+    width: 301px;
+    height: 200px;
 }
 
 .featured-projects a:link, a:visited { 
@@ -244,6 +253,15 @@ span:hover { /* hover effect on arrows */
 }
 
 /* Other projects */
+
+.other-projects-container { /* each individual project */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 20px 0px 20px 0px;
+}
+
 .other-projects p {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
@@ -260,6 +278,28 @@ span:hover { /* hover effect on arrows */
 
 .other-projects h3{ 
     margin: 3px 0px -15px 0px;
+}
+
+.title-and-description2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3px;
+    width: 300px;
+    height: auto;
+}
+
+.tag-container2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    width: 300px;
+    margin-top: 15px;
+}
+
+.tag2 {
+    display: inline-flex;
+    background-color: #ff9100;
+    padding: 3px 6px;
+    margin: 2px;
 }
 
 .other-projects a:link, a:visited {
@@ -458,20 +498,27 @@ header {
     width: 60%;
 }
 
-.other-projects .project-container {
+.project-container .other-projects  {
     width: 550px;
+}
+
+.featured-projects img {
+    width: 301px;
+    height: 200px;
 }
     
 .skills {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 60%;
+    width: 100%;
     padding-bottom: 0;
 }
 
 .skills-container {
+    display: flex;
+    justify-content: space-evenly;
     width: 200px;
-    height: 200px;
+    height: 350px;
 }
 
 }
@@ -557,10 +604,21 @@ header {
 .featured-projects {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.project-container { /* each individual project */
+    width: 800px;
+    margin-right: 200px;
+    align-items: start;
 }
 
 .featured-projects .project-container {
-    width: 340px;
+    display: flex;
+    justify-content: flex-start;
+    width: 400px;
+    height: 450px;
     margin: 30px 10px;   
 }
 
@@ -568,9 +626,21 @@ header {
     font-size: 19px;
 }
 
+.title-and-description {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 85px;
+}
+
 .featured-projects img {
-    width: 320px;
-    height: 220px;
+    width: 403px;
+    height: 280px;
+}
+
+.tag-container {
+    font-size: 15px;
+    width: 400px;
 }
 
 /* Other projects */
@@ -578,11 +648,34 @@ header {
     font-size: 19px;
 }
 
-.other-projects .project-container {
-    width: 800px;
-    margin-right: 200px;
-    align-items: start;
+.other-projects-container { 
+    width: 100%;
+    margin: 10px;
+    padding-bottom: 10px;
 }
+
+.title-and-description2 {
+    width: 950px;
+}
+
+.tag-container2 {
+    font-size: 15px;
+    width: 950px; 
+} 
+
+/* Thoughts section */
+
+.thoughts-container { /* each individual thought */
+    width: 400px;
+    height: 400px;
+}
+
+.thoughts img {
+    width: 403px;
+    height: 280px;
+    margin-bottom: 5px;
+}
+
 
 /* Skills section */
 .skills {
@@ -593,8 +686,10 @@ header {
 }
 
 .skills-container {
-    width: 200px;
-    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 350px;
     margin: 20px 50px;
 }
 
